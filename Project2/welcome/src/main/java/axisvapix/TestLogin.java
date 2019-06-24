@@ -10,10 +10,10 @@ public class TestLogin {
 
     public static void main(String[] args) {
             System.out.println("Sending Request...");
-        HttpResponse<String> response = Unirest.post("http://192.168.1.155/axis-cgi/param.cgi")
+        HttpResponse<String> response = Unirest.post("http://192.168.1.155/#settings/image")
         .header("accept", "application/json")
-        .queryString("action", "list")
-        .queryString("responseformat", "rfc")
+        //.queryString("action", "list")
+        //.queryString("responseformat", "rfc")
         .basicAuth("root", "pass")
         //.field("parameter", "value")
         //.field("foo", "bar")
